@@ -8,7 +8,6 @@ var result = fs.readFileSync(path.join(__dirname, 'codes_data.csv'), 'utf8')
     return c;
   });
 
-console.log(result);
 module.exports = function(codes) {
   var codes = codes;
   return {
