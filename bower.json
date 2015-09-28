@@ -1,0 +1,13 @@
+{
+  "name": "delivery-calculator",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "jquery.scrollTo": "~2.1.2"
+  }
+}

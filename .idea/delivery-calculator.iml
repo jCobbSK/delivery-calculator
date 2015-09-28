@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="CompassSettings">
+    <option name="compassExecutableFilePath" value="$USER_HOME$/.rbenv/versions/1.9.3-p327/lib/ruby/gems/1.9.1/gems/compass-1.0.0.alpha.18/bin/compass" />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.10.5, rbenv: 1.9.3-p327) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="execjs (v2.2.2, rbenv: 1.9.3-p327) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v1.8.1, rbenv: 1.9.3-p327) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rake (v10.4.2, rbenv: 1.9.3-p327) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="sass (v3.3.14, rbenv: 1.9.3-p327) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="susy (v2.0.0, rbenv: 1.9.3-p327) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="uglifier (v2.6.1, rbenv: 1.9.3-p327) [gem]" level="application" />
+  </component>
+</module>

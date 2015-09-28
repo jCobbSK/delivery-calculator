@@ -1,0 +1,238 @@
+<div id="landing-calculator">
+  <div class="container text-center">
+    <header class="header-nav clearfix text-left">
+      <a href="#"><img src="img/logo-orderlord.svg" id="logo"></a>
+      <ul class="nav pull-right">
+        <li><a href="#" class="scroll-to" data-scroll-element=".calculator">calculator</a></li>
+        <li class="hide-mobile">
+          <a href="http://www.orderlord.com" target="_blank">take me to orderlord.com</a>
+        </li>
+      </ul>
+    </header>
+    <section class="main">
+      <div class="offset"></div>
+      <img src="img/cross.svg" id="cross">
+      <h1>CURE YOUR DELIVERY</h1>
+      <h2>DID YOU HAVE YOUR<br/>DELIVERY CHECKUP THIS YEAR?</h2>
+      <p>
+        get an expert consultation for your delivery and
+        find out where the biggest opportunities lie
+        earn more a save more
+      </p>
+      <br/>
+      <h3>
+        Got TakeAway expo code?<br/>
+        redeem code
+      </h3>
+      <p>
+        get 1 hour consulting
+        for FREE
+      </p>
+
+      <div class="former">
+        <iframe name="redeem_sender" style="display: none;"></iframe>
+        <form id="redeem" target="redeem_sender" action="https://docs.google.com/forms/d/1XjdpJhLAay6DRTkXuraf8QIQiTzfMGkzk3iu4Re6PVc/formResponse">
+          <div class="form__group clearfix">
+            <input type="text" id="redeem-code" name="code" placeholder="code" class="text-center">
+          </div>
+          <div class="form__group clearfix">
+            <input type="text" id="redeem-name" name="entry.117382690" placeholder="company name" class="text-center">
+          </div>
+          <div class="form__group clearfix">
+            <input type="email" id="redeem-email" name="entry.39970760" placeholder="email" class="text-center" required>
+          </div>
+          <div class="form__group clearfix">
+            <input id="redeem-submit" type="submit" value="redeem your code" class="btn btn-red">
+          </div>
+        </form>
+        <h3 id="redeem-thanks" class="red-color" style="display: none;">We received your credentials, We will contact you soon.</h3>
+      </div>
+      <div class="offset"></div>
+    </section>
+  </div>
+
+  <section class="tractor text-center" style="background-image: url('img/bg.jpg');">
+    <div class="container">
+      <h2>
+        NEED SOME HELP<br/>
+        WITH CALCULATIONS?
+      </h2>
+      <p>
+        try our delivery spending<br/>
+        calculator for free
+      </p>
+      <span class="scroll-to" data-scroll-element=".calculator">
+        <img src="img/arrow-down.svg" class="arrow">
+      </span>
+
+    </div>
+  </section>
+  <div class="container">
+    <section class="calculator">
+      <div class="calculator-box clearfix">
+        <header class="text-center">
+          <h2>delivery calculator</h2>
+          <p>calculate your delivery summary</p>
+        </header>
+        <div class="calc-body clearfix">
+          <div class="col-left">
+            <div class="wrapper">
+              <div class="form-group-calc clearfix">
+                <label for="calc-locations-number" class="pull-left">Number of Locations</label>
+                <input type="number" class="field-calculator blinking-red" id="calc-locations-number" value="1">
+              </div>
+              <div class="form-group-calc clearfix">
+                <label for="calc-orders" class="pull-left">Orders per day</label>
+                <input type="number" class="field-calculator" id="calc-orders" value="">
+              </div>
+              <div class="form-group-calc clearfix">
+                <label for="calc-drivers" class="pull-left">Drivers per shift (peak)</label>
+                <input type="number" class="field-calculator chain-field field-small" id="calc-drivers" value="">
+              </div>
+              <div class="form-group-calc clearfix">
+                <label for="calc-driver-salary" class="pull-left">Salary of driver <small>per month</small></label>
+                <input type="number" class="field-calculator chain-field field-small" id="calc-driver-salary" value="">
+              </div>
+              <div class="form-group-calc clearfix">
+                <label for="calc-manager-salary" class="pull-left">Salary of manager <small>per month</small></label>
+                <input type="number" class="field-calculator chain-field field-small" id="calc-manager-salary" value="">
+              </div>
+              <div class="form-group-calc clearfix">
+                <label for="calc-order-per-customer" class="pull-left">Value of order per customer</label>
+                <input type="number" class="field-calculator" id="calc-order-per-customer" value="">
+              </div>
+              <div class="form-group-calc clearfix">
+                <label for="calc-late-orders" class="pull-left">Late orders per day</label>
+                <input type="number" class="field-calculator" id="calc-late-orders" value="">
+              </div>
+            </div>
+          </div>
+          <div class="col-right text-left">
+            <h2 class="only-mobile text-center">Results</h2>
+            <div class="wrapper">
+              <table class="table table-simple">
+                <thead>
+                <tr>
+                  <th>
+                    Late Delivery Costs
+                    <small>per day</small>
+                  </th>
+                  <th>
+                    w/o OL
+                  </th>
+                  <th>
+                    with OL
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><span class="hint--top" data-hint="Value of late orders based on&#10;late orders per day and value of order">late orders</span></td>
+                  <td id="late-orders-wo"></td>
+                  <td id="late-orders-w"></td>
+                </tr>
+                <tr>
+                  <td><span class="hint--top" data-hint="25% of customers with late order&#10;will never use your restaurant again.&#10;Value of that customer is 2*average order value">lost customers</span>
+                  </td>
+                  <td id="lost-customers-wo"></td>
+                  <td id="lost-customers-w"></td>
+                </tr>
+                <tr>
+                  <td><span class="hint--top" data-hint="50% of customer with late order&#10;will reduce their ordering.&#10;Value of that customer is average order value.">disappointed customers</span>
+                  </td>
+                  <td id="disapointed-customers-wo"></td>
+                  <td id="disapointed-customers-w"></td>
+                </tr>
+                </tbody>
+              </table>
+
+              <table id="direct-labor-table" class="table table-simple">
+                <thead>
+                <tr>
+                  <th>
+                    Direct Labor Costs
+                    <small>per month</small>
+                  </th>
+                  <th>
+                    w/o OL
+                  </th>
+                  <th>
+                    with OL
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td><span class="hint--top" data-hint="Orderlord reduces approximately 10% of drivers">drivers costs</span></td>
+                  <td id="drivers-wo"></td>
+                  <td id="drivers-w"></td>
+                </tr>
+                <tr>
+                  <td><span class="hint--top" data-hint="Orderlord provides centralized management of delivery&#10;so 1 manager is sufficient.&#10;Otherwise one manager is used for each location.">delivery managers costs</span></td>
+                  <td id="managers-wo"></td>
+                  <td id="managers-w"></td>
+                </tr>
+                </tbody>
+              </table>
+
+              <table class="table table-simple">
+                <thead>
+                <tr>
+                  <th colspan="3">
+                    Financial Impact <small>per month</small>
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>
+                    <span class="hint--top" data-hint="Sum of lost customers and&#10;dissapointed customers * 30 days">Lost revenue</span>
+                  </td>
+                  <td id="lost-revenue" class="red-color"></td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="hint--top" data-hint="Saved value on reducing late orders,&#10;if multiple locations additional savings&#10;on salaries of employees.">improvement using orderlord</span>
+                  </td>
+                  <td id="improvement-value" class="green-color" rel="tooltip"></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="cta-mail text-center">
+    <div class="container">
+      <div class="offset"></div>
+      <h2>
+        WANT TO KNOW MORE?<br/>
+        GIVE US YOUR EMAIL, WE WILL CONTACT YOU.
+      </h2>
+      <div class="former">
+        <iframe name="email_sender" style="display: none;"></iframe>
+        <form id="sheit" target="email_sender" action="https://docs.google.com/forms/d/1ep-rUyzDvTglw5VEzzH9VkrF0IB4IiNdRCcygHC4tRk/formResponse">
+          <div class="form__group clearfix">
+            <input type="text" id="company-name" name="entry.52425411" placeholder="company name" class="text-center">
+          </div>
+          <div class="form__group clearfix">
+            <input type="email" id="company-email" name="entry.813469330" placeholder="email" class="text-center" required>
+          </div>
+          <div class="form__group clearfix">
+            <input id="sheit-submit" type="submit" value="submit" class="btn btn-red">
+          </div>
+        </form>
+        <h3 id="thanks" class="red-color" style="display: none;">Thank you for submitting.<br/>We will contact you soon.</h3>
+      </div>
+      <div class="offset"></div>
+    </div>
+  </section>
+  <footer>
+    <div class="container clearfix">
+      <img src="img/auth-logo.svg" class="pull-left" id="foot-logo">
+      <span class="goodbye-claim pull-right">we help people to squeeze maximum from their delivery</span>
+    </div>
+  </footer>
+</div>
