@@ -159,6 +159,22 @@ function initialize() {
   Calculator();
 }
 
+function checkCode(callback) {
+  $.ajax({
+    method: 'GET',
+    url: '/check_code',
+    data: {
+      code: $('#redeem-code').val()
+    },
+    success: function(data) {
+      callback(false, data);
+    },
+    error: function(){
+      callback(true);
+    }
+  });
+}
+
 $(document).ready(function(){
   initialize();
 
@@ -167,9 +183,16 @@ $(document).ready(function(){
     $('#thanks').show();
     return true;
   });
+
   $('#redeem-submit').on('click', function(){
-    $('#redeem').hide();
-    $('#redeem-thanks').show();
-    return true;
+    checkCode(function(err, result){
+      if (!err && result.success) {
+        $('#redeem').submit();
+        $('#redeem').hide();
+        $('#redeem-thanks').show();
+      } else {
+        alert('invalid code');
+      }
+    });
   });
 });
