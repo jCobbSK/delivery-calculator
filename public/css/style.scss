@@ -942,7 +942,7 @@ span.customSelect span {
 /* line 77, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .offset {
   width: 100%;
-  height: 60px;
+  height: 40px;
 }
 /* line 82, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .former {
@@ -951,46 +951,47 @@ span.customSelect span {
 }
 /* line 86, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .calculator-box {
-  margin: 40px 0 0 0;
+  border-top: 1px solid #dddddd;
+  margin: 60px 0 0 0;
 }
-/* line 88, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 89, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .calculator-box .calc-body {
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
 }
-/* line 92, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 93, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .calculator-box h2 {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 10px;
 }
-/* line 98, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 99, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .calculator-box header p {
   margin: 0 0 20px 0;
 }
-/* line 102, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 103, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .calculator-box .col-left, #landing-calculator .calculator-box .col-right {
   position: relative;
 }
-/* line 104, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 105, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .calculator-box .col-left .wrapper, #landing-calculator .calculator-box .col-right .wrapper {
   padding: 40px;
 }
-/* line 109, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 110, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .calculator-box .col-left {
   width: 50%;
   float: left;
 }
-/* line 113, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 114, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .calculator-box .col-left .form-group-calc {
   margin: 20px 0 0 0;
 }
-/* line 114, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 115, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .calculator-box .col-left .form-group-calc label {
   line-height: 40px;
   font-weight: bold;
 }
-/* line 119, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 120, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .calculator-box .col-left .form-group-calc .field-calculator {
   height: 40px;
   float: right;
@@ -1002,23 +1003,22 @@ span.customSelect span {
   text-align: center;
   border-radius: 5px;
 }
-/* line 129, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 130, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .calculator-box .col-left .form-group-calc .field-calculator:focus {
   border-radius: 5px;
 }
-/* line 135, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 136, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .calculator-box .col-right {
   width: 50%;
   float: right;
   border-left: 1px solid #dddddd;
   margin-left: -1px;
 }
-/* line 143, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 144, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .form-group-calc {
-  overflow: hidden;
-  *zoom: 1;
+  overflow: auto;
 }
-/* line 147, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 149, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .tractor {
   color: white;
   padding: 60px 0 20px 0;
@@ -1026,77 +1026,81 @@ span.customSelect span {
   -webkit-background-size: cover cover;
   background-size: cover;
 }
-/* line 152, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 154, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .tractor h2 {
   font-size: 46px;
 }
-/* line 155, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 157, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .tractor p {
   font-size: 26px;
 }
-/* line 158, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 160, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .tractor .arrow {
   width: 64px;
   height: 64px;
 }
-/* line 165, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 167, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .table-simple {
   border-collapse: collapse;
   width: 100%;
   margin: 0 0 30px 0;
 }
-/* line 169, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 171, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .table-simple td, #landing-calculator .table-simple th {
   height: 40px;
   text-align: right;
   vertical-align: middle;
 }
-/* line 173, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 175, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .table-simple td:first-child, #landing-calculator .table-simple th:first-child {
   text-align: left;
 }
-/* line 177, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 179, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .table-simple td {
   font-weight: bold;
 }
-/* line 179, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 181, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .table-simple td:first-child {
   font-weight: normal;
 }
-/* line 183, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 185, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .table-simple tr {
   border-bottom: 1px solid #dddddd;
 }
-/* line 187, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 189, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .table-simple tbody tr:last-child {
   border-bottom: 0;
 }
-/* line 193, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 195, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .cta-mail h2 {
   font-weight: bold;
   margin-bottom: 40px;
 }
-/* line 198, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 199, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+#landing-calculator .cta-mail h3 {
+  margin: 0 0 40px 0;
+}
+/* line 203, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator footer {
   background: #474747;
   color: white;
   padding: 15px 0;
 }
-/* line 202, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 207, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator footer #foot-logo {
   width: auto;
   height: 30px;
 }
-/* line 206, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 211, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator footer span {
   font-family: 'Montserrat', sans-serif;
   line-height: 30px;
 }
-/* line 211, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 216, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .only-mobile {
   display: none;
 }
-/* line 214, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 219, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .blinking-red {
   -webkit-animation-name: redblinker;
   -webkit-animation-duration: 1s;
@@ -1115,12 +1119,12 @@ span.customSelect span {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-/* line 229, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 234, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator .blinking-red:hover {
   -webkit-animation: 0;
   animation: 0;
 }
-/* line 235, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+/* line 240, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
 #landing-calculator #thanks {
   border-radius: 5px;
   border: 1px solid red;
@@ -1128,38 +1132,38 @@ span.customSelect span {
   font-weight: normal;
 }
 @-webkit-keyframes redblinker {
-  /* line 251, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+  /* line 256, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
   0% {
     -webkit-box-shadow: 0 0 0 1px #e82532 inset;
     box-shadow: 0 0 0 1px #e82532 inset;
   }
 
-  /* line 252, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+  /* line 257, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
   50% {
     -webkit-box-shadow: 0 0 0 1px transparent inset;
     box-shadow: 0 0 0 1px transparent inset;
   }
 
-  /* line 253, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+  /* line 258, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
   100% {
     -webkit-box-shadow: 0 0 0 1px #e82532 inset;
     box-shadow: 0 0 0 1px #e82532 inset;
   }
 }
 @keyframes redblinker {
-  /* line 257, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+  /* line 262, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
   0% {
     -webkit-box-shadow: 0 0 0 1px #e82532 inset;
     box-shadow: 0 0 0 1px #e82532 inset;
   }
 
-  /* line 258, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+  /* line 263, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
   50% {
     -webkit-box-shadow: 0 0 0 1px transparent inset;
     box-shadow: 0 0 0 1px transparent inset;
   }
 
-  /* line 259, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
+  /* line 264, ../../../app/assets/stylesheets/calculator/includes/_global.scss */
   100% {
     -webkit-box-shadow: 0 0 0 1px #e82532 inset;
     box-shadow: 0 0 0 1px #e82532 inset;
@@ -1291,18 +1295,24 @@ span.customSelect span {
   white-space: pre;
 }
 
-/* line 78, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 79, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--right--light:after, [data-hint-light]:after {
   content: attr(data-hint-light);
   background: rgba(255, 255, 255, 0.9);
   color: #9da0a3;
 }
 
-/* line 84, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 85, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--right--green:after, [data-hint-green]:after {
   content: attr(data-hint-green);
   background: rgba(33, 179, 55, 0.9);
   color: white;
+}
+
+/* line 91, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+.hint--multiline:after {
+  white-space: normal !important;
+  width: 200px;
 }
 
 /**
@@ -1319,32 +1329,32 @@ span.customSelect span {
 /**
  * set default color for tooltip arrows
  */
-/* line 104, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 110, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--top:before {
   border-top-color: #383838;
 }
 
-/* line 107, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 113, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--bottom:before {
   border-bottom-color: #383838;
 }
 
-/* line 110, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 116, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--left:before {
   border-left-color: #383838;
 }
 
-/* line 113, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 119, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--right:before {
   border-right-color: #383838;
 }
 
-/* line 116, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 122, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--right--light:before {
   border-right-color: #FFF;
 }
 
-/* line 120, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 126, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--right--green:before {
   border-right-color: #21b337;
 }
@@ -1352,23 +1362,23 @@ span.customSelect span {
 /**
  * top tooltip
  */
-/* line 127, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 133, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--top:before {
   margin-bottom: -12px;
 }
 
-/* line 129, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 135, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--top:after {
   margin-left: -18px;
 }
 
-/* line 131, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 137, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--top:before, .hint--top:after {
   bottom: 100%;
   left: 50%;
 }
 
-/* line 134, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 140, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--top:hover:after, .hint--top:hover:before, .hint--top:focus:after, .hint--top:focus:before {
   -webkit-transform: translateY(-8px);
   -ms-transform: translateY(-8px);
@@ -1378,23 +1388,23 @@ span.customSelect span {
 /**
  * bottom tooltip
  */
-/* line 142, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 148, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--bottom:before {
   margin-top: -12px;
 }
 
-/* line 144, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 150, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--bottom:after {
   margin-left: -18px;
 }
 
-/* line 146, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 152, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--bottom:before, .hint--bottom:after {
   top: 100%;
   left: 50%;
 }
 
-/* line 149, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 155, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--bottom:hover:after, .hint--bottom:hover:before, .hint--bottom:focus:after, .hint--bottom:focus:before {
   -webkit-transform: translateY(8px);
   -ms-transform: translateY(8px);
@@ -1404,24 +1414,24 @@ span.customSelect span {
 /**
  * right tooltip
  */
-/* line 157, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 163, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--right:before {
   margin-left: -12px;
   margin-bottom: -6px;
 }
 
-/* line 160, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 166, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--right:after {
   margin-bottom: -14px;
 }
 
-/* line 162, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 168, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--right:before, .hint--right:after {
   left: 100%;
   bottom: 50%;
 }
 
-/* line 165, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 171, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--right:hover:after, .hint--right:hover:before, .hint--right:focus:after, .hint--right:focus:before {
   -webkit-transform: translateX(8px);
   -ms-transform: translateX(8px);
@@ -1431,24 +1441,24 @@ span.customSelect span {
 /**
  * left tooltip
  */
-/* line 173, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 179, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--left:before {
   margin-right: -12px;
   margin-bottom: -6px;
 }
 
-/* line 176, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 182, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--left:after {
   margin-bottom: -14px;
 }
 
-/* line 178, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 184, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--left:before, .hint--left:after {
   right: 100%;
   bottom: 50%;
 }
 
-/* line 181, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 187, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--left:hover:after, .hint--left:hover:before, .hint--left:focus:after, .hint--left:focus:before {
   -webkit-transform: translateX(-8px);
   -ms-transform: translateX(-8px);
@@ -1464,34 +1474,34 @@ span.customSelect span {
  *  1) hint--always
  *
  */
-/* line 195, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 201, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--always:after, .hint--always:before {
   opacity: 1;
   visibility: visible;
 }
 
-/* line 198, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 204, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--always.hint--top:after, .hint--always.hint--top:before {
   -webkit-transform: translateY(-8px);
   -ms-transform: translateY(-8px);
   transform: translateY(-8px);
 }
 
-/* line 202, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 208, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--always.hint--bottom:after, .hint--always.hint--bottom:before {
   -webkit-transform: translateY(8px);
   -ms-transform: translateY(8px);
   transform: translateY(8px);
 }
 
-/* line 206, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 212, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--always.hint--left:after, .hint--always.hint--left:before {
   -webkit-transform: translateX(-8px);
   -ms-transform: translateX(-8px);
   transform: translateX(-8px);
 }
 
-/* line 210, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
+/* line 216, ../../../app/assets/stylesheets/ember/framework/_tooltips.scss */
 .hint--always.hint--right:after, .hint--always.hint--right:before {
   -webkit-transform: translateX(8px);
   -ms-transform: translateX(8px);

@@ -76,7 +76,7 @@ function Calculator() {
 
     $('.field-calculator').on('keyup blur', function(){
       var id = $(this).attr('id'),
-        value = $(this).val();
+          value = $(this).val();
 
       if (id == 'calc-locations-number') {
         isChain(value > 1);
@@ -96,31 +96,31 @@ function Calculator() {
 
   function calculateData(user, constants) {
     var res = {},
-      lateOrdersPerc = percentageFormat(user['calc-late-orders'] / user['calc-orders']),
-      lateOrdersVal = moneyFormat(user['calc-late-orders'] * user['calc-order-per-customer']),
-      lateOrdersPercOL = percentageFormat(user['calc-late-orders'] * constants.OrderlordLateOrderLowerRate / user['calc-orders']),
-      lateOrdersValOL = moneyFormat(user['calc-late-orders'] * constants.OrderlordLateOrderLowerRate * user['calc-order-per-customer']),
-      lostCustomers = percentageFormat(lateOrdersPerc.value * constants.lostCustomersFraction),
-      lostCustomersVal = lostCustomers.value * user['calc-orders'],
-      lostCustomersOL = percentageFormat(lateOrdersPercOL.value * constants.lostCustomersFraction),
-      lostCustomersValOL = lostCustomersOL.value * user['calc-orders'],
-      dissCustomers = percentageFormat(lateOrdersPerc.value * constants.disappointedCustomersFraction),
-      dissCustomersVal = dissCustomers.value * user['calc-orders'],
-      dissCustomersOL = percentageFormat(lateOrdersPercOL.value * constants.disappointedCustomersFraction),
-      dissCustomersValOL = dissCustomersOL.value * user['calc-orders'],
-      drivers = moneyFormat(user['calc-drivers'] * user['calc-driver-salary']),
-      driversOL = moneyFormat(Math.ceil(user['calc-drivers'] * constants.driversSaveFraction) * user['calc-driver-salary']),
-      managers = moneyFormat(user['calc-locations-number'] * user['calc-manager-salary']),
-      managersOL = moneyFormat(user['calc-manager-salary']),
-      valueOfDissapointedCustomer = user['calc-order-per-customer'],
-      valueOfLostCustomer = user['calc-order-per-customer'] * 2;
+        lateOrdersPerc = percentageFormat(user['calc-late-orders'] / user['calc-orders']),
+        lateOrdersVal = moneyFormat(user['calc-late-orders'] * user['calc-order-per-customer']),
+        lateOrdersPercOL = percentageFormat(user['calc-late-orders'] * constants.OrderlordLateOrderLowerRate / user['calc-orders']),
+        lateOrdersValOL = moneyFormat(user['calc-late-orders'] * constants.OrderlordLateOrderLowerRate * user['calc-order-per-customer']),
+        lostCustomers = percentageFormat(lateOrdersPerc.value * constants.lostCustomersFraction),
+        lostCustomersVal = lostCustomers.value * user['calc-orders'],
+        lostCustomersOL = percentageFormat(lateOrdersPercOL.value * constants.lostCustomersFraction),
+        lostCustomersValOL = lostCustomersOL.value * user['calc-orders'],
+        dissCustomers = percentageFormat(lateOrdersPerc.value * constants.disappointedCustomersFraction),
+        dissCustomersVal = dissCustomers.value * user['calc-orders'],
+        dissCustomersOL = percentageFormat(lateOrdersPercOL.value * constants.disappointedCustomersFraction),
+        dissCustomersValOL = dissCustomersOL.value * user['calc-orders'],
+        drivers = moneyFormat(user['calc-drivers'] * user['calc-driver-salary']),
+        driversOL = moneyFormat(Math.ceil(user['calc-drivers'] * constants.driversSaveFraction) * user['calc-driver-salary']),
+        managers = moneyFormat(user['calc-locations-number'] * user['calc-manager-salary']),
+        managersOL = moneyFormat(user['calc-manager-salary']),
+        valueOfDissapointedCustomer = user['calc-order-per-customer'],
+        valueOfLostCustomer = user['calc-order-per-customer'] * 2;
 
     res['late-orders-wo'] = costTdFormat(lateOrdersPerc.formatted, lateOrdersVal.formatted);
     res['late-orders-w'] = costTdFormat(lateOrdersPercOL.formatted, lateOrdersValOL.formatted);
     res['lost-customers-wo'] = Math.round(lostCustomersVal);
     res['lost-customers-w'] = Math.round(lostCustomersValOL);
     res['disapointed-customers-wo'] = Math.round(dissCustomersVal),
-    res['disapointed-customers-w'] = Math.round(dissCustomersValOL);
+      res['disapointed-customers-w'] = Math.round(dissCustomersValOL);
     res['drivers-wo'] = drivers.formatted;
     res['drivers-w'] = driversOL.formatted;
     res['managers-wo'] = managers.formatted;
@@ -159,18 +159,18 @@ function initialize() {
   Calculator();
 }
 
-function checkCode(callback) {
+function checkCode(code, callback) {
   $.ajax({
     method: 'GET',
     url: '/check_code',
     data: {
-      code: $('#redeem-code').val()
+      code: code
     },
     success: function(data) {
-      callback(false, data);
+      callback(data);
     },
     error: function(){
-      callback(true);
+      callback({success:false});
     }
   });
 }
@@ -183,16 +183,24 @@ $(document).ready(function(){
     $('#thanks').show();
     return true;
   });
-
   $('#redeem-submit').on('click', function(){
-    checkCode(function(err, result){
-      if (!err && result.success) {
-        $('#redeem').submit();
-        $('#redeem').hide();
-        $('#redeem-thanks').show();
-      } else {
-        alert('invalid code');
-      }
-    });
+    var code = $('#redeem-code').val();
+    console.log(code);
+    if (code) {
+      checkCode(code, function(data){
+        if (data.success) {
+          $('#redeem').hide();
+          $('#redeem-thanks').show();
+          return $('#redeem').submit();
+        } else {
+          alert('Invalid code');
+          return false;
+        }
+      });
+    } else {
+      $('#redeem').hide();
+      $('#redeem-thanks').show();
+      $('#redeem').submit();
+    }
   });
 });

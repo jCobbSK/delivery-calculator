@@ -5,7 +5,7 @@ var codes = require('../custom/codes');
 /* GET home page. */
 
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Orderlord - Cure delivery' });
 });
 
 router.get('/check_code', function(req, res) {
